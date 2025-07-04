@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aplikasi Firwan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0057d9, #00a8ff);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: #fff;
+      color: #0057d9;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e0e0e0;
+    }
+
+    .gradient-text {
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 30px;
+      background: linear-gradient(90deg, #ff8a00, #e52e71, #9b00ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 3s infinite linear;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    #clock {
+      font-size: 1.8em;
+      margin-top: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    #content {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Teks gradien -->
+  <div class="gradient-text">Ahlan Wa Sahlan. By (Firwansya)</div>
+  
+  <p>Update CAPCUT PRO</p>
+
+  <button class="btn" onclick="tampilkanHalaman()">UPDATE</button>
+
+  
+  <!-- Jam digital -->
+  <div id="clock"></div>
+
+  <!-- Konten HTML tambahan -->
+  <div id="content"></div>
+
+  <!-- Audio -->
+<audio id="audio" src="https://c.top4top.io/m_3472vvf6b0.mp3"preload="auto" loop></audio>
+
+  <!-- Script: include halaman + musik -->
+  <script>
+    function tampilkanHalaman() {
+      fetch('logincapcut.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('content').innerHTML = data;
+          document.getElementById('audio').play().catch(err => {
+            console.warn('Autoplay gagal:', err);
+          });
+        })
+        .catch(err => {
+          document.getElementById('content').innerHTML = "<p>Gagal memuat halaman</p>";
+        });
+    }
+
+    // Jam digital
+    function updateClock() {
+      const now = new Date();
+      const jam = now.getHours().toString().padStart(2, '0');
+      const menit = now.getMinutes().toString().padStart(2, '0');
+      const detik = now.getSeconds().toString().padStart(2, '0');
+      document.getElementById('clock').innerText = `${jam}:${menit}:${detik}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock(); // langsung tampil saat load
+  </script>
+</body>
+</html>
