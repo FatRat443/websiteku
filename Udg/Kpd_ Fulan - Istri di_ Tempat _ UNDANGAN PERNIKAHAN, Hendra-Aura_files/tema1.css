@@ -1,0 +1,1092 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+/*========== Variables Dark theme ==========*/
+:root {
+    --body_font1:  'Allura', cursive;
+    --body_font2:  'Merienda', cursive;
+    --body_font3:'League Spartan', sans-serif;
+    --body_font4:'Philosopher', sans-serif;
+
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.5rem;
+    --h3-font-size: 2.3rem;
+    --h4-font-size: 2rem;
+    --h5-font-size: 1.9rem;
+    --h6-font-size: 1.7rem;
+    --h7-font-size: 1.5rem;
+    --h8-font-size: 1.2rem;
+    --h9-font-size: 1.1rem;
+    --h10-font-size: 1rem;
+    --h11-font-size: .8rem;
+
+    --warna-bg0: #FEEFEF;
+    --warna-bg1: #efefef7d ;
+    --warna-bg2: #8B6572 ;
+    --warna-bottom: #E6C6D1 ;
+    --warna-tombol: #A10035 ;
+    --warna-text: #594048 ;
+
+    --warna-abu: #c0c7c7 ;
+    --warna-hitam: #000 ;
+    --warna-putih: #ffff ;
+
+    --font-light: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 800;
+  }
+  /* start stack */
+  /* html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  } */
+  body{
+    -ms-overflow-style: none;/* for Internet Explorer, Edge */
+    scrollbar-width: none;/* for Firefox */
+    overflow-y: scroll;
+  }
+
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  .smallsec {
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .smallsec::-webkit-scrollbar {
+      display: none;
+  }
+  .con1{
+      width: 100%;
+      box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 18%);
+      background-color: var(--warna-bg1);
+      border-radius: 20px;
+      margin:10px 0 5rem 0;
+      position: relative;
+      /* height: 90vh; */
+  }
+  .min-vh-90{
+    min-height: 90vh !important;
+  }
+  /* end stack */
+ #kirian {
+          float: left;
+          top: 0;
+          left: 0;
+          position: fixed;
+          width: 69%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-color: var(--warna-putih);
+        }
+        #kananan {
+            float: right;
+          top: 0;
+          left: 0;
+          width: 31%;
+          height: 100vh !important;
+        }
+        .kanan{
+          height: 100vh !important;
+          position: relative;
+
+        }
+
+.bottomFixButtionComponent{
+  z-index: 2;
+  position: fixed;
+  bottom: 0px;
+  padding-top: 10px;
+  width: 31% !important;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px -4px 3px rgb(27 27 24 / 8%);
+}
+.nav__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--warna-tombol);
+  text-decoration: none;
+  font-size: .8rem;
+  font-family: var(--body_font3);
+ cursor: pointer;
+}
+.nav__icon{
+    font-size: 1rem;
+    background-color: var(--warna-putih);
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: .3rem;
+}
+
+.active-link {
+    background-color: var(--warna-bg1);
+    padding-top: 10px;
+    font-weight: 600;
+    height: 70px;
+    width: 60px;
+    }
+.nav__link:hover{
+  color: var(--warna-tombol);
+  padding-top: 10px;
+  height: 70px;
+}
+
+.space-2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.space-1 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 820px) {
+    .modal-all{
+        width: 50%;
+    }
+    .arab{
+        font-weight: var(--font-medium) ;
+    }
+}
+@media (max-width: 820px) {
+  .modal-awal {
+      width: auto;
+      right: -650px;
+  }
+  .modal-all{
+      width: 95%;
+  }
+  .arab{
+  font-weight: var(--font-semi-bold);
+  }
+  .bottomFixButtionComponent{
+    width: 100% !important;
+  }
+  .responsive0 img {
+    max-width:60% !important;
+  }
+  .responsive1 img {
+    max-width:80%;
+  }
+  .responsive2 img{
+    max-width:70%;
+  }
+  .responsive4 img{
+    max-width:40%;
+  }
+  #kirian{
+    display: none;
+  }
+  #kananan {
+    padding-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .suara{
+   padding: .1rem .3rem .2rem !important;
+  }
+  .suara_icon{
+   padding: .2rem .3rem !important;
+  }
+    .zoomin{
+   padding: .1rem .3rem .2rem !important;
+  }
+  .zoomin_icon{
+   padding: .2rem !important;
+  }
+}
+
+
+
+
+
+  /* Modal Content */
+  .modal-all {
+    background-image: url('../images/tema1/bg_atas.png');
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--warna-tombol);
+    border-radius: 20px;
+    height: 90%;
+    background-size: cover;
+  }
+
+  .modalTa,.modalHa,.modalMa,.modalQR,.modalLi,.modalCr,.modalAb {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 1rem; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+  /* The Close Button */
+  .closeTa,.closeHa,.closeMa,.closeQR,.closeLi,.closeCr ,.closeAb {
+    color: var(--warna-tombol);
+    background-color: var(--warna-putih);
+    border-radius: 50%;
+    padding: 0 1rem .2rem;
+    font-size: 28px;
+    position:fixed;
+    font-weight: bold;
+    bottom: 2.5rem;
+    z-index: 4;
+  }
+
+  .closeTa:hover,.closeTa:focus,
+  .closeHa:hover,.closeHa:focus,
+  .closeMa:hover,.closeMa:focus,
+  .closeQR:hover,.closeQR:focus,
+  .closeLi:hover,.closeLi:focus,
+  .closeCr:hover,.closeCr:focus,
+  .closeAb:hover,.closeAb:focus {
+    background-color: var(--warna-tombol);
+    color: var(--warna-putih);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .tab-buku{
+    border-color: var(--warna-text);
+  }
+
+  @keyframes wow {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1, .1);
+    }
+  }
+  .btn-zoom {
+    animation: wow 2s linear infinite;
+    animation-direction: alternate;
+  }
+
+
+.modal-awal {
+  position: absolute;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+}
+
+.atas{
+  position: fixed;
+}
+.modal_kepada{
+  font-family: var(--body_font2);
+  font-size: var(--h10-font-size);
+  font-weight: var(--font-light);
+  color: var(--warna-putih);
+}
+.modal_deskripsi{
+  font-family: var(--body_font3);
+  font-size: var(--h8-font-size);
+  line-height: normal;
+  font-weight: var(--font-light);
+  color: var(--warna-putih);
+}
+
+.responsive0 img {
+    max-width:20%;
+  }
+  .responsive1 img{
+    max-width:70%;
+  }
+  @-webkit-keyframes fivedeg /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(2deg);
+      -o-transform: rotate(2deg);
+      transform: rotate(2deg);
+    }
+    to {
+      -webkit-transform: rotate(-2deg);
+      -o-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+    }
+  }
+  @keyframes fivedeg {
+    from {
+      -ms-transform: rotate(2deg);
+      -moz-transform: rotate(2deg);
+      -webkit-transform: rotate(2deg);
+      -o-transform: rotate(2deg);
+      transform: rotate(2deg);
+    }
+    to {
+      -ms-transform: rotate(-2deg);
+      -moz-transform: rotate(-2deg);
+      -webkit-transform: rotate(-2deg);
+      -o-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+    }
+  }
+  .fivedeg {
+    animation: fivedeg 4s linear infinite;
+    animation-direction: alternate;
+  }
+  .responsive2 img{
+    max-width:30%;
+  }
+  .responsive3 img {
+    max-width:60%;
+  }
+  .responsive4 img{
+    max-width:40%;
+  }
+
+  .profile {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+/* section 1 */
+.kiri_dalem{
+    background-position: center;
+    background-repeat: no-repeat; background-size: cover;
+  }
+
+.nama_nikah{
+  font-family: var(--body_font1);
+  line-height: normal;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  background-image:linear-gradient(-45deg, var(--warna-tombol) 0%, var(--warna-tombol)
+                                    35%, var(--warna-putih) 40%, var(--warna-tombol) 60%, var(--warna-tombol) 100%);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% 200px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 6s linear infinite;
+  animation: stripes 17s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 835px 0;
+  }
+}
+
+.akad{
+  font-family: var(--body_font2);
+  font-size: var(--h7-font-size);
+  font-weight: var(--font-bold);
+  color: var(--warna-text);
+}
+
+.daftar_tombol,.salin_tombol {
+    background-color: var(--warna-tombol);
+    border: 1px solid var(--warna-text);
+    padding: .3rem .8rem;
+    font-size: var(--h9-font-size);
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: var(--body_font3);
+    color: var(--warna-putih);
+}
+.sinar_daftar_tombol:hover {
+    box-shadow: 0 0 4px 0 var(--warna-text) inset, 0 0 4px 2px var(--warna-text);
+    color: var(--warna-putih);
+    cursor: pointer;
+}
+.salin_tombol{
+  font-family: var(--body_font3);
+  font-size: var(--h9-font-size);
+}
+.terjemah{
+  font-family: var(--body_font2);
+  font-size: var(--h7-font-size);
+  font-weight: var(--font-light);
+  color: var(--warna-putih);
+  text-shadow: 4px 2px 4px rgb(0 0 0 / 54%);
+}
+
+.walimatul{
+    font-family: var(--body_font2);
+    font-size: var(--h6-font-size);
+    font-weight: var(--font-bold);
+    color: var(--warna-text);
+
+  }
+.salam{
+  font-family: var(--body_font3);
+  line-height: normal;
+  font-size: var(--h10-font-size);
+  font-weight: var(--font-light);
+  color: var(--warna-text);
+}
+.nama_panjang{
+  padding:0 8px;
+  font-family: var(--body_font1); 
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--warna-putih);
+  background-image:linear-gradient(-45deg, var(--warna-tombol) 0%, var(--warna-tombol)
+                                    35%, var(--warna-putih) 40%, var(--warna-tombol) 60%, var(--warna-tombol) 100%);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% 200px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 6s linear infinite;
+  animation: stripes 17s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 835px 0;
+  }
+}
+.ortu{
+  font-family: var(--body_font2);
+  font-size: var(--h10-font-size);
+  font-weight: var(--font-medium);
+  color: var(--warna-text);
+}
+
+.tempat{
+  font-family: var(--body_font3);
+  font-size: var(--h9-font-size);
+  font-weight: var(--font-light);
+  color: var(--warna-text);
+}
+
+.bg-bottom{
+    background-color: var(--warna-bottom);
+    width: 100%;
+    z-index: 3;
+  }
+.bg-warna{
+    box-shadow: 0 0 4px var(--warna-abu);
+    background-color: var(--warna-bg1);
+    border-radius:12px ;
+    width: 95%;
+}
+
+.judul{
+    font-family: var(--body_font4);
+    font-size: var(--h5-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--warna-tombol);
+  }
+.alamat{
+  font-family: var(--body_font2);
+  font-size: var(--h8-font-size);
+  font-weight: var(--font-light);
+  color: var(--warna-tombol);
+}
+.bg-alamat{
+    border-right: 2px solid var(--warna-tombol);
+    border-left: 2px solid var(--warna-tombol);
+}
+
+.tanggal{
+    font-family: var(--body_font2);
+  font-size: var(--h7-font-size);
+  font-weight: var(--font-bold);
+  color: var(--warna-text);
+  }
+.arab{
+    font-family: var(--body_font1);
+    font-size: var(--h5-font-size);
+    color: var(--warna-tombol);
+}
+
+.arti{
+  font-family: var(--body_font3);
+  font-size: var(--h10-font-size);
+  font-weight: var(--font-light);
+  color: var(--warna-text);
+}
+.selisih{
+  font-family: var(--body_font2);
+  font-size: var(--h8-font-size);
+  color: var(--warna-putih);
+}
+.selisih1{
+  font-family: var(--body_font2);
+  color: var(--warna-putih);
+  font-size: var(--h11-font-size);
+}
+
+.jumlah{
+    z-index: 2;
+    width: 100%;
+  background-color:var(--warna-putih);
+  border-radius: 12px;
+}
+.isian{
+  font-family: var(--body_font3);
+}
+.kirim{
+  background-color: var(--warna-tombol);
+  border: 2px solid var(--warna-tombol);
+  padding: .2rem 1rem;
+  border-radius: 4px;
+  color: var(--warna-putih);
+  font-weight: var(--font-semi-bold);
+  width: 100%;
+}
+.kirim:hover {
+  box-shadow: 0 0 4px 0 var(--warna-text) inset, 0 0 4px 2px var(--warna-text);
+  color: var(--warna-putih);
+  }
+.yhadir{
+    background-color: var(--warna-tombol);
+    color: var(--warna-putih);
+    padding: 2px 2px 0px 2px ;
+    margin-right: 4px;
+    border-radius: 4px;
+  }
+.thadir{
+    background-color: var(--warna-abu);
+    color: var(--warna-putih);
+    padding: 2px 2px 0px 2px ;
+    margin-right: 4px;
+    border-radius: 4px;
+  }
+.kirim_waktu{
+  color: var(--warna-abu);
+  font-size: var(--h11-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.heronya{
+    background-image:url('../images/tema1/bg_atas.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* min-height: 100vh; */
+    overflow-x: hidden;
+    /* display: none; */
+  }
+  .herotengah{
+    background-color: var(--warna-bg0);
+    border: 6px solid var(--warna-tombol);
+    border-radius: 20px;
+    border-top-left-radius: 240px;
+    border-top-right-radius: 240px;
+    padding: 0 30px;
+    }
+    @media (min-width: 520px) {
+        .herotengah{
+            margin: 50px 0;
+        }
+    }
+    .font-weight-bold {
+        font-weight: var(--font-bold) !important;
+    }
+    .tgl_date {
+        font-size: 1.5rem;
+    }
+  .kangamb_atas{
+    position: relative;
+    float: right;
+    width: 70% ;
+  }
+
+  .kanluar1{
+    position: absolute;
+    right: 0;
+    margin:-40px 0px 0px 0px ;
+  }
+  .kanluar2{
+    position: absolute;
+    right: 0;
+    margin:-20px -80px 0px 0px ;
+  }
+  .kanluar3{
+    position: absolute;
+    right: 0;
+    margin:-50px -60px 0px 0px ;
+  }
+  .kanluar4{
+    position: absolute;
+    right: 0;
+    margin:-200px -60px 0px 0px ;
+  }
+
+.kandalem img{
+    max-width:100%;
+}
+
+@keyframes kandalem1 {
+    from {
+      -ms-transform: rotate(5deg);
+      -moz-transform: rotate(5deg);
+      -webkit-transform: rotate(5deg);
+      -o-transform: rotate(5deg);
+      transform: rotate(5deg) scale(1, 1);
+    }
+    to {
+      -ms-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -webkit-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg) scale(1, 1);
+    }
+  }
+  .kandalem1 {
+    animation: kandalem1 2s linear infinite;
+    animation-direction: alternate;
+  }
+  /*  */
+
+@keyframes kandalem2 {
+    from {
+        -ms-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        transform: rotate(-5deg) scale(1, 1);
+    }
+    to {
+        -ms-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        transform: rotate(5deg) scale(1, 1);
+    }
+  }
+  .kandalem2 {
+    animation: kandalem2 2s linear infinite;
+    animation-direction: alternate;
+  }
+  /*  */
+
+@keyframes kandalem3 {
+    from {
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        transform: rotate(-15deg) scale(1, 1);
+    }
+    to {
+
+        -ms-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        transform: rotate(15deg) scale(1.2, 1.2);
+
+    }
+  }
+  .kandalem3 {
+    animation: kandalem3 4s linear infinite;
+    animation-direction: alternate;
+  }
+
+  .kangamb_bawah{
+    position: relative;
+    float: left;
+    width: 70% ;
+    top: 100% ;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+
+  .kangamb_kanan{
+    position: relative;
+    float: right;
+    width: 70% ;
+    top: 50vh ;
+  }
+  .kangamb_kiri{
+    position: relative;
+    float: left;
+    width: 70% ;
+    top: 70vh ;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+.outputnya{
+    position: relative;
+
+}.menu_belakang{
+    position: absolute;
+    overflow-y: hidden;
+}
+.menu_depan{
+    position: absolute;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.separator::before,
+.separator::after{
+  content: '';
+  flex: 1;
+  border-top:1px dashed var(--warna-tombol);
+}
+
+.separator:not(:empty)::before{
+  padding-top: 2px;
+  margin-right: .25em;
+  margin-bottom: 2%;
+}
+.separator:not(:empty)::after{
+  padding-top: 2px;
+  margin-left: .25em;
+  margin-bottom: 2%;
+}
+
+
+/* card kecil */
+.kartu_banyak{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.kartu_satu{
+	padding: 4px 4px;
+	width: 20%;
+}
+ .kartu_dalem{
+  background: var(--warna-tombol);
+  border-radius: 8px;
+  padding: 4px;
+}
+/* end card kecil */
+
+
+.zoomin{
+  top: 1rem;
+  position: fixed;
+  background-color: var(--warna-putih);
+  opacity: .8;
+  padding: .1rem .3rem .3rem;
+  border-radius: 100%;
+  z-index: var(--z-tooltip);
+  box-shadow: 0px 2px 4px rgb(27 27 24 / 25%);
+  cursor: pointer;
+}
+.zoomin_icon{
+  font-size: .8rem;
+  color: var(--warna-tombol);
+  background-color: var(--warna-putih);
+  padding: .3rem .3rem .2rem .3rem;
+  border-radius: 100%;
+}
+.suara{
+  bottom: 4.5rem;
+  position: fixed;
+  right: 1rem;
+  background-color: var(--warna-putih);
+  opacity: .8;
+  padding: .1rem .3rem .3rem;
+  border-radius: 100%;
+  z-index: var(--z-tooltip);
+  box-shadow: 0px 2px 4px rgb(27 27 24 / 25%);
+  cursor: pointer;
+}
+.suara_icon{
+  font-size: .8rem;
+  color: var(--warna-tombol);
+  background-color: var(--warna-putih);
+  padding: .3rem .3rem .2rem .4rem;
+  border-radius: 100%;
+}
+
+/* timeline */
+
+
+.ag_tl_item {
+  margin: 0 0 50px;
+  position: relative;
+}
+
+.ag_tl {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.ag_tl_line {
+  width: 2px;
+  background-color: var(--warna-putih);
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  left: 30px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.ag_tl-card_box {
+  padding: 0 0 20px;
+}
+.ag_tl_item:nth-child(2n) .ag_tl-card_box {
+  padding: 0 0 20px;
+}
+.ag_tl-card_point-box {
+  display: inline-block;
+  margin: 0 0 0 8px;
+}
+.ag_tl_item:nth-child(2n) .ag_tl-card_point-box {
+  margin: 0 0 0 8px;
+}
+.ag_tl-card_point {
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  border: 3px solid var(--warna-tombol);
+  background-color: var(--warna-putih);
+  text-align: center;
+  font-size: 20px;
+  color: var(--warna-putih);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.ag_tl-card_item {
+  width: 80%;
+  margin: -55px 0 0 60px;
+  display: inline-block;
+  background-color: var(--warna-tombol);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+}
+.ag_tl-card_item,
+.js-ag-active.ag_tl_item:nth-child(2n) .ag_tl-card_item {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.ag_tl-card_arrow {
+  height: 34px;
+  width: 34px;
+  margin-top: 7px;
+  background-color: var(--warna-tombol);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ag_tl_item:nth-child(2n+1) .ag_tl-card_arrow,.ag_tl_item:nth-child(2n) .ag_tl-card_arrow {
+  right: auto;
+    left: 0;
+}
+.ag_tl-card_info {
+  padding: 8px 12px;
+}
+.tl_judul {
+  margin: 10px 0 4px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-family: var(--body_font2);
+  font-weight: var(--font-medium);
+  font-size: var(--h8-font-size);
+  color: var(--warna-putih);
+}
+.tl_icon{
+    font-size: 1.4rem;
+    color: var(--warna-tombol);
+}
+.tl_des{
+  font-size: var(--h9-font-size);
+  font-weight: var(--font-light);
+  color: var(--warna-putih);
+  font-family: var(--body_font3);
+}
+.tl_tgl{
+ float: right;
+ font-size: 1rem;
+ font-weight: var(--font-semi-bold);
+ color: var(--warna-putih);
+ font-family: var(--body_font2);
+ margin-bottom: .4rem;
+}
+
+.gulir {
+    min-height: 10px;
+  max-height: 350px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.gulir::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Track */
+  .gulir::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--warna-abu);
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  .gulir::-webkit-scrollbar-thumb {
+    background: var(--warna-tombol);
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  .gulir::-webkit-scrollbar-thumb:hover {
+    background: var(--warna-tombol);
+  }
+
+
+.sosmed{
+  color: var(--warna-hitam);
+  text-decoration: none;
+}
+.sosmed:hover{
+  color: var(--warna-tombol);
+}
+
+.credits{
+ color: var(--warna-hitam);
+ font-style: italic;
+ font-size: var(--h11-font-size);
+ cursor: pointer;
+}
+.qr{
+    box-shadow: var(--warna-tombol) 0px 0px 0px 5px; width:300px;
+    border-radius: 4px;
+}
+.bank{
+    background-color: var(--warna-putih);
+    padding:4px;
+    border-radius: 4px
+}
+.posi_belakang{
+  position: absolute;
+}
+.posi_depan{
+position: relative;
+}
+/* poster */
+.posterBox::before {
+  content: "";
+  width: 40%;
+  height: 150%;
+  background: linear-gradient(to right, var(--warna-bottom), var(--warna-putih), var(--warna-bottom));
+  animation: glowing 5s linear infinite;
+}
+.posterBox {
+  width: 300px;
+  height: 460px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--warna-text) 0px 2px 10px 0px,
+  rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+  box-sizing: border-box;
+}
+
+.posterCard {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  border-radius: 20px;
+  z-index: 5;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+  box-sizing: border-box;
+}
+
+
+@keyframes glowing {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.resposter img{
+  max-width: 100%;
+  margin-bottom: -40px;
+}
+.kantung{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px); 
+  width: 100%;
+  height: 100px;
+}
